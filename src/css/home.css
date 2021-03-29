@@ -1,0 +1,212 @@
+@font-face {
+  font-family: greatVibes;
+  src: url(../fonts/GreatVibes-Regular.ttf);
+}
+@font-face {
+  font-family: productSans;
+  src: url(../fonts/ProductSans-Regular.ttf);
+}
+@font-face {
+  font-family: montserrat;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+html {
+  width: 100%;
+}
+* {
+  box-sizing: border-box;
+  font-family: productSans;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black !important;
+}
+nav {
+  padding: 20px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+.logo img {
+  width: 50px;
+}
+.section {
+  padding: 20px;
+  color: #fbb03b;
+}
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 0px;
+}
+.bannerText {
+  flex: 1;
+  order: 2;
+  text-align: center;
+}
+.bannerMainText {
+  font-family: greatVibes;
+  font-size: 30px;
+}
+.bannerPrimaryText {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+.bannerSecondaryText {
+  font-size: 18px;
+  text-transform: capitalize;
+  opacity: 0.8;
+}
+.bannerRegistrationText {
+  font-size: 12px;
+  margin-top: 10px;
+  letter-spacing: 8px;
+}
+.banner .mainBtn {
+  font-size: 18px;
+  display: inline-flex;
+  text-transform: uppercase;
+  margin-top: 10px;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
+.bannerImage {
+  flex: 1;
+  width: 100%;
+}
+/* button */
+.mainBtn {
+  padding: 10px 20px;
+  color: black !important;
+  background: linear-gradient(90deg, #fff33b, #e93e3a);
+  border-radius: 5px;
+  transition: 0.2s ease;
+  font-family: montserrat;
+  border: none;
+}
+.mainBtn:hover {
+  text-decoration: none;
+  padding: 10px 35px;
+}
+.secondaryBtn {
+  padding: 7px 20px;
+  color: black !important;
+  background: #fbb03b;
+  border: 1px solid black;
+  border-radius: 5px;
+  transition: 0.2s ease;
+  font-family: montserrat;
+}
+/* prize */
+.prizeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: #0e0e0e;
+}
+.prize {
+  background: linear-gradient(30deg, #fff33b, #e93e3a);
+  color: black;
+  text-align: center;
+  padding: 100px 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.prize:nth-child(2) {
+  background: linear-gradient(-120deg, #fff33b, #e93e3a);
+}
+.prize:nth-child(3) {
+  background: linear-gradient(-30deg, #fff33b, #e93e3a);
+}
+.prizeTitle {
+  font-size: 18px;
+  font-family: montserrat;
+}
+.prizeCash {
+  font-family: montserrat;
+  font-size: 35px;
+  margin: 10px 0px 20px;
+}
+/* label */
+.label {
+  font-family: montserrat;
+  font-size: 35px;
+}
+.labelLine {
+  height: 3px;
+  width: 75px;
+  background-color: #fbb03b;
+  margin: 10px 0px 30px;
+}
+/* partners */
+.partnerLogo {
+  border-radius: 100px;
+  width: 120px;
+  height: 120px;
+  overflow: hidden;
+}
+.partnerLogo img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+/* icon */
+.icon {
+  width: 40px;
+}
+/* footer */
+footer {
+  background-color: #0e0e0e;
+  color: grey !important;
+}
+@media (min-width: 600px) {
+  nav {
+    padding: 20px 50px;
+    justify-content: flex-start;
+  }
+  .section {
+    padding: 50px;
+  }
+  .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .bannerText {
+    text-align: left;
+  }
+  .bannerMainText {
+    font-size: 60px;
+  }
+  .bannerPrimaryText {
+    font-size: 40px;
+  }
+  .bannerSecondaryText {
+    font-size: 30px;
+  }
+  .banner .mainBtn {
+    font-size: 20px;
+    text-transform: uppercase;
+    width: initial;
+    justify-content: initial;
+  }
+  .bannerImage {
+    order: 2;
+  }
+  .prizeContainer {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
+  }
+}
